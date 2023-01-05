@@ -1,0 +1,26 @@
+.outer{
+    height: 40vw;
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+#inp{
+    width: 50vh;
+    height: 2vw;
+    border: 1px solid green;
+}
+#butt{
+    background-color: black;
+    color: bisque;
+    margin-top: 10px;
+}
