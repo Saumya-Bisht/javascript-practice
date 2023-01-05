@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h3>Click on the "<" or ">" to go through the slideshow!😀</h3>
+    <h4>Enjoy the nature and relief your stress.🥰</h4>
+    <div class="slideshow-outer">
+
+        <div class="slide">
+          
+          <img src="one.jpg" style="height:600px;width:100%" alt="">
+          <div class="text">IMAGE 1</div>
+        </div>
+      
+        <div class="slide">
+          
+          <img src="two.jpg" style="height:600px;width:100%" alt="">
+          <div class="text">IMAGE 2</div>
+        </div>
+      
+        <div class="slide">
+          
+          <img src="three.jpg" style="height:600px;width:100%" alt="">
+          <div class="text">IMAGE 3</div>
+        </div>
+
+        <div class="slide">
+          
+            <img src="four.jpg" style="height:600px;width:100%" alt="">
+            <div class="text">IMAGE 4</div>
+          </div>
+      
+        <div class="slide">
+          
+            <img src="five.jpg" style="height:600px;width:100%" alt="">
+            <div class="text">IMAGE 5</div>
+        </div>
+
+        <div class="slide">
+          
+            <img src="six.jpg" style="height:600px;width:100%" alt="">
+            <div class="text">IMAGE 6</div>
+          </div>
+        <!--buttons -->
+        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+      </div>
+
+      <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex =slideIndex + n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+      </script>
+</body>
+</html>

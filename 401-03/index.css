@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.previous, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.text {
+  color: #590245;
+  font-size: 25px;
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+  text-align: center;
+}
+
