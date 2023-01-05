@@ -1,0 +1,27 @@
+h3{
+    text-align: center;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 40vw;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+.box{
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px;
+    text-align: center;
+    
+}
+#but{
+    margin-top: 10px;
+    background-color: black;
+    color: azure;
+}

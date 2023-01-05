@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h3>Please click on the "Click Me!" button to see the changes.😀</h3>
+    <div class="outer">
+        <div class="box">1st Child</div>
+        <div class="box">2nd Child</div>
+        <div class="box">3rd Child</div>
+        <div class="box">4th Child</div>
+        <div class="box">5th Child</div>
+        <div class="box">6th Child</div>
+        <div class="box">7th Child</div>
+        <div class="box">8th Child</div>
+        <div class="box">9th Child</div>
+        <div class="box">10th Child</div>
+        <div class="box">11th Child</div>
+        <div class="box">12th Child</div>
+        <div class="box">13th Child</div>
+        <div class="box">14th Child</div>
+        <div class="box">15th Child</div>
+        <div class="box">16th Child</div>
+        <div class="box">17th Child</div>
+        <button onclick="clickButton()" id="but">Click me!</button>
+    </div>
+
+    <script>
+        function clickButton(){
+            let Boxes=document.getElementsByClassName("box");
+            for(let i=0;i<Boxes.length;i++){
+                if(i%2==1){
+                    Boxes[i].style.backgroundColor='lime';
+                    Boxes[i].style.color='white';
+                }
+            }
+            Boxes[0].setAttribute('style','background-color:blue')
+            Boxes[Boxes.length-1].setAttribute('style','background-color:palevioletred')
+            Boxes[8].setAttribute('style','background-color:green')
+        }
+    </script>
+</body>
+</html>
