@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+        <h2>My Shopping List</h2>
+        <p>
+            Enter a new item.. <input id="inp" type="text" placeholder="Start typing..."> &nbsp; <button onclick="list()" id="butt">Add item</button>
+        </p>
+        <ul id="list_item">
+             
+        </ul>
+    
+    </div>
+    <script>
+        function list() {
+            var createlist = document.createElement("li");
+            var text = document.getElementById("inp").value; 
+
+            var buttonn = document.createElement('BUTTON');
+            buttonn.innerHTML="Delete"
+
+            var textlist=document.createTextNode(text);
+            createlist.appendChild(textlist);
+            createlist.appendChild(buttonn);
+            document.getElementById("list_item").appendChild(createlist);
+
+            
+            buttonn.addEventListener("click",(event)=>{
+                event.path[1].remove();
+            })
+        }
+    </script>
+</body>
+</html>
