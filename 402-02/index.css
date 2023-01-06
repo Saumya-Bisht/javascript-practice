@@ -1,0 +1,42 @@
+.outer{
+    height: 90vh;
+    width: 70vw;
+    border: 1px solid black;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    color: green;
+    text-align: center;
+}
+#butt{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: bisque;
+    margin-left: 35%;
+}
+#text{
+    font-size: larger;
+    font-weight: bolder;
+    color:rgb(15, 2, 102);
+    text-align: center;
+    display: none;
+    
+}
+#image{
+    display: none;
+    height: 300px;
+    width: 350px;
+    
+    
+}
+#tx{
+    display: none;
+    color: rgb(1, 61, 79);
+    font-weight: bolder;
+    text-align: center;
+}

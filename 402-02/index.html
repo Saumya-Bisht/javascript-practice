@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="inside">
+            <h2>Geekster</h2>
+            <p>Click on the button below to add the image element.</p>
+            <button onclick="output()" id="butt">Click me!</button>
+        </div>
+        <div class="afterclick">
+            <p id="text">Image element added.</p>
+            <img id="image" src="dogu.jpg" alt="a cute dog">
+            <p id="tx">Please refresh if you want to repeat it again.😀</p>
+        </div>
+        
+    </div>
+    <script>
+        function output(){
+            var txt=document.getElementById('text').style.display = "block";
+            var imgg=document.getElementById('image').style.display = "block";
+            var tx2=document.getElementById('tx').style.display = "block";
+        }
+    </script>
+</body>
+</html>
