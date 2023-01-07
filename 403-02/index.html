@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403-02</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <h1 id="head1">Drum 🥁 Kit</h1>
+  <div class="alldrums">
+    <button id="btn1" class="drum">W</button>
+    <button id="btn2" class="drum">A</button>
+    <button id="btn3" class="drum">S</button>
+    <button id="btn4" class="drum">D</button>
+    <button id="btn5" class="drum">J</button>
+    <button id="btn6" class="drum">K</button>
+    <button id="btn7" class="drum">L</button>
+  </div>
+
+  <script>
+    document.addEventListener("keypress",function(event){
+    makesound(event.key);
+ });
+function makesound(key){
+    switch(key)
+    {
+        case "w":
+            var crash= new Audio("Drum_kit/sounds/crash.mp3");
+            crash.play();
+            break;
+        case "a":
+                var buzz= new Audio('Drum_kit/sounds/buzz.mp3');
+                buzz.play();
+                break;
+        case "s":
+                    var buzzer= new Audio('Drum_kit/sounds/buzzer.mp3');
+                    buzzer.play();
+                    break;
+        case "d":
+                   var crock= new Audio('Drum_kit/sounds/crock.mp3');
+                    crock.play();
+                    break;
+        case "j":
+                   var snare= new Audio('Drum_kit/sounds/snare.mp3');
+                    snare.play();
+                    break;
+        case "k":
+                  var pin= new Audio('Drum_kit/sounds/pin.mp3');
+                    pin.play();
+                    break;
+        case "l":
+                    var kick= new Audio('Drum_kit/sounds/kick-bass.mp3');
+                    kick.play();
+                    break;
+        case "W":
+            var crash= new Audio("Drum_kit/sounds/crash.mp3");
+            crash.play();
+            break;
+        case "A":
+                var buzz= new Audio('Drum_kit/sounds/buzz.mp3');
+                buzz.play();
+                break;
+        case "S":
+                    var buzzer= new Audio('Drum_kit/sounds/buzzer.mp3');
+                    buzzer.play();
+                    break;
+        case "D":
+                   var crock= new Audio('Drum_kit/sounds/crock.mp3');
+                    crock.play();
+                    break;
+        case "J":
+                   var snare= new Audio('Drum_kit/sounds/snare.mp3');
+                    snare.play();
+                    break;
+        case "K":
+                  var pin= new Audio('Drum_kit/sounds/pin.mp3');
+                    pin.play();
+                    break;
+        case "L":
+                    var kick= new Audio('Drum_kit/sounds/kick-bass.mp3');
+                    kick.play();
+                    break;
+                    default: console.log(buttonInnerHTML);
+    
+    }
+}
+
+let btn=document.getElementsByClassName("drum").length;
+for(let i=0;i<btn;i++){ 
+document.querySelectorAll(".drum")[i].addEventListener("click",playSound);
+function playSound(){
+    let innerhtmlbtn= this.innerHTML;
+    makesound(innerhtmlbtn);
+    
+}
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background-color: #2b3651;
+}
+
+h1 {
+  font-size: 100px;
+  color: #DBEDF3;
+  text-shadow: 3px 0px #c9065e;
+
+}
+.drum {
+    border: 5px solid #3e4a6b;
+    font-weight: 1000;
+    font-size: 70px;
+    color: #bc0758;
+    text-shadow: 2px 0px #d5dee2;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    padding-top: 55px ;
+    margin: 10px;
+  }
+#btn1 {
+background-image:url('Drum_kit/images/crash.png');
+}
+#btn2 {
+    background-image:url('Drum_kit/images/tom2.png');
+  }
+  
+ #btn3 {
+    background-image:url('Drum_kit/images/tom3.png');
+  }
+  
+ #btn4 {
+    background-image:url('Drum_kit/images/tom1.png');
+  }
+  
+  #btn5{
+    background-image:url('Drum_kit/images/snare.png');
+  }
+  
+  #btn6{
+    background-image:url('Drum_kit/images/tom4.png');
+  }
+  
+ #btn7 {
+    background-image:url('Drum_kit/images/kick.png');
+  }
