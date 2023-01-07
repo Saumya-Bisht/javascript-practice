@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(#60dbd1, #9198e5);
+}
+.outer{
+    height: 80vh;
+    width: 80vw;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(174, 227, 239);
+    margin-left: 10%;
+
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.dispbox{
+    border: 1px solid green;
+    box-shadow: 3px 3px 3px black;
+
+}
+#keypressed{
+ border: 0px solid;
+}
+p{
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 80px;
+    color: #0b6742;
+    
+}

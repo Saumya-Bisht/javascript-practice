@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>
+        Press any key on your keyboard and this page will show you that which key have you pressed along with it's key code.
+
+    </h2>
+    <h3>
+        NOTE: Capital letters key has different key codes and small letters have different key codes.😉
+    </h3>
+    <div class="outer">
+
+        <div class="dispbox">
+            <h2 id="heading">Press any key on your keyboard! </h2>
+            <p id="keypressed"></p>
+        </div>
+        <p id="head3">Enter any key.</p>
+
+    </div>
+
+    <script>
+        document.addEventListener("keypress",(event)=>{
+            var name=event.key;
+            var code=event.keyCode;
+            let h1=document.getElementById("heading");
+
+            let h3=document.getElementById("keypressed");
+            h3.style.color="#0b6742";
+            h3.style.textAlign="center";
+            h3.style.fontSize="900";
+            h3.innerHTML=name;
+            
+
+            h1.innerHTML="You have pressed:";
+            
+            let p1=document.getElementById("head3");
+            p1.innerHTML= "Key code:"+code;
+        })
+    </script>
+</body>
+</html>
