@@ -1,0 +1,63 @@
+body{
+    background: url(food8.jpeg) center center repeat;
+    color: #532827;
+    
+}
+.outer{
+    border: 2px solid rgb(1, 53, 45);
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
+    width: 30vw;
+    margin-left: 35%;
+    background: url(paper-pattern.jpg)repeat;
+    border-radius: 2%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    border-bottom: solid 1px #ddd;
+    text-align: center;
+}
+#inp1{
+    width: 90px;
+    height: 30px;
+    margin-top: -14%;
+}
+span{
+    height: 50px;
+    width: 50px;
+    margin-left: -20%;
+    
+}
+#select{
+    width: 150px;
+    height: 30px;
+    margin-left: 
+}
+#inp2{
+    width: 90px;
+    height: 30px;
+}
+button{
+    background: #6c2726;
+    color: white;
+    border-bottom: solid 4px #222;
+    
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 50%;
+}
+sup{
+    font-size: 24px;
+}
+#tip{
+    font-size: 50px;
+    
+}
+#each{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet  " href="index.css">
+</head>
+<body>
+    <div class="outer">
+        <h1>Saumya's Tip<br> Calculator</h1>
+        <h4>How much was your bill?</h4>
+       <span>💲</span><input id="inp1" type="number" >
+        <br>
+      <h4>How was your service?</h4>
+    <select id="select">
+        <option selected disabled>--Choose an option-- </option>
+        <option value=0.30>30%-Outstanding 😍 </option>
+        <option value=0.20>20%-Good😋</option>
+        <option value=0.15>15%-It was okay 😊</option>
+        <option value=0.10>10%-Bad🙁</option>
+        <option value=0.05>5%-Terrible😓</option>
+    </select><br>
+
+    <h4>How many people are sharing the bill?</h4>
+    <input id="inp2" type="number">
+    <br>
+    <button onclick="calc()">CALCULATE</button><BR>
+    <div id="totalTip" style="display: block;">
+        <sup>$</sup><label id="tip">💸</label>
+        <small id="each" style="display: block;">EACH</small>
+
+</div>
+    
+    </div>
+    <script>
+        function calc(){
+            var billAmount=document.getElementById("inp1").value;
+            // var val=a.value;
+            var serviceQuality=document.getElementById("select").value;
+            var numPeople=document.getElementById("inp2").value;
+            var d=document.getElementsByTagName("label");
+            var total = ( (billAmount*serviceQuality)/ numPeople)
+            total = total.toFixed(2);
+            d[0].innerHTML=total;
+        }
+    </script>
+</body>
+</html>
