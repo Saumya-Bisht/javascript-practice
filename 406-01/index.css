@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('3scilwC.jpg');
+    width: 100%;
+    height: 500px;
+}
+
+h1{
+    /* border: 2px solid green; */
+    margin: 1rem;
+    color: white;
+    letter-spacing: 6px;
+    font-size: 50px;
+}
+
+#numberOfCountries,
+#numberOfSearchResults {
+    /* border: 2px solid green; */
+    margin: .5rem;
+    color: beige;
+    font-size: 20px;
+}
+
+.buttonContainer{
+    /* border: 2px solid green; */
+    margin: 1rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.buttonContainer button{
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(125, 71, 240);
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: purple;
+}
+
+input{
+    border: none;
+    padding: 1rem;
+    border-radius: 50px;
+    outline: none;
+    width: 50%;
+    box-shadow: inset 2px 2px 3px gray, inset -2px -2px 3px gray;
+}
+span{
+    margin-left: 53%;
+    margin-top: -2.5%;
+}
+
+.card{
+    /* border: 2px solid red; */
+    width: 15vw;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+    background-image: url('download.png');
+    color: rgb(24, 1, 41);
+    font-size: 20px;
+    font-weight: bolder;
+}
