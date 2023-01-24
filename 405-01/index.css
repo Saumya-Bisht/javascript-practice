@@ -1,0 +1,30 @@
+body{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    
+}
+h2{
+    font-size: 300%;
+    color: #f6a818ec;
+    text-align: center;
+}
+#subheading{
+    text-align: center;
+    font-size: larger;
+    margin-top: -2%;
+}
+#buttonContainer{
+    margin-left: 39%;
+}
+button{
+  background-color: #f6a818ec;
+  border: 1px solid #f6a818ec;
+  width: 150px;
+  height: 30px;
+  font-size: large;
+
+
+
+  
+}
