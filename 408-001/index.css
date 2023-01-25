@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    color: red;
+    font-weight: bold;
+}
+
+input{
+    height: 30px;
+    width: 120px;
+    justify-content: space-evenly;
+    border: 1px solid rgb(229, 168, 189);
+}
+
+tr{
+    background-color: rgb(231, 189, 203);
+    margin:4%;
+    width: 210%;
+    height: 50px;
+    margin-left: -55%;
+}
+table{
+    background-color: rgb(231, 189, 203);
+    width: 210%;
+    margin-left: -55%;
+    
+    
+}
+button{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
