@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+h1{
+    color: bisque;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+#input{
+    background-color: rgb(155, 237, 168);
+    width: 200px;
+    height: 25px;
+}
+#butt{
+    border: 2px solid rgb(241, 65, 68);
+    width: 100px;
+    height: 30px;
+    font-size:medium;
+    background-color: rgb(189, 16, 16);
+}
+table {
+    width: 100%;
+    border: 1px solid rgb(57, 48, 48);
+}
+tr{
+   color: rgb(219, 219, 231);
+}
