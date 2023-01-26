@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .profileContainer{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .innerDiv{
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+            width: 20%;
+        }
+
+        .innerDiv img{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+
+        .innerDiv div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="header">
+            <i id="logo" style="font-size:30px;color:rgb(247, 239, 243)" class="fa">&#xf09b;</i>
+            <h1>Github Finder</h1>
+            <div class="sp">
+            <span >
+                HOME &nbsp; &nbsp;
+            </span>
+            <span>
+                ABOUT
+            </span>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="search">
+        <div class="maindiv">
+            <h3>Let's stalk someone on Github😉</h3>
+        </div>
+        <input placeholder="Start Searching..." id="searchBox" type="text">
+        <button id="searchButton" onclick="func()">Go</button>
+        <button id="clr" onclick="clearFunc()">Clear</button>
+        </div>
+
+        <div class="profileContainer" id="profileContainer">
+
+        </div>
+
+    </main>
+</body>
+</html>
