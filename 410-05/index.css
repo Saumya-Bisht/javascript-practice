@@ -1,0 +1,40 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgb(255 129 130 / 40%);
+}
+.cardContainer{
+width: 40%;
+height: 270px;
+display: flex;
+
+justify-content: center;
+
+background-color: #ffd7d5;
+margin-top: 10%;
+box-shadow: 5px 3px 6px 5px #cf222e;
+border-radius: 3%;
+}
+#nextButton{
+    color: white;
+    background-color: #fa4549;
+    border: 1px solid black;
+    height: 30px;
+    float: right;
+    margin-right: 3%;
+    
+}
+#quote{
+    font-size:x-large;
+    font-weight: bolder;
+}
+#author{
+    text-align: center;
+    color: rgb(1, 24, 44);
+}
+hr{
+    
+    width: 80%;
+}
