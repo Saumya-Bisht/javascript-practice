@@ -1,0 +1,41 @@
+.header{
+    background-color: rgb(2, 2, 60);
+    color: white;
+    height: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+.inp{
+    /* border: 1px solid rgb(2, 2, 60) ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 3%;
+
+}
+#inputValue{
+    height: 28px;
+   
+    border: 1px solid black;
+}
+#searchButton{
+    height: 30.5px;
+    margin-left: 17.5%;
+    margin-top: -2.3%;
+    color: white;
+    background-color:rgb(2, 2, 60) ;
+}
+#def{
+    font-weight: bold;
+    color: rgb(3, 14, 101);
+}
+.foot{
+    background-color: rgb(2, 2, 60);
+    color: white;
+    text-align: center;
+    height: 25px;
+    margin-top: 14.3%;
+    
+}
