@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="maincontainer">
+        <h1>Validating Web Forms</h1>
+      <div class="form">
+            <label> First Name</label> 
+            <input onkeyup="validateform()" type="text" id="fname">
+            <p id="parafname"></p>
+
+            <label> Last Name</label> 
+            <input onkeyup="validateform()" type="text" id="lname">
+            <p  id="paralname"></p>
+
+            <label> Email</label> 
+            <input onkeyup="validateform()" type="email" id="email">
+            <p  id="paraemail"></p>
+
+
+            <label> Password</label> 
+            <input onkeyup="validateform()"type="password" id="pass">
+            <p id="parapass"></p>
+
+            <label> Telephone</label> 
+            <input onkeyup="validateform()"type="number" id="tele">
+            <p id="paratele"></p>
+
+            <label> Your bio</label> 
+            <input onkeyup="validateform()"type="text" id="bio">
+            <p  id="parabio"></p>
+            
+            <h1 id="emptyerror"></h1>
+            <button  onclick="submitform()" type="submit">Submit</button>
+          
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
